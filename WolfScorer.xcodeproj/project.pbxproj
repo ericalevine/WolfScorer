@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00C0F15117F93C42620E58F1 /* WatchLeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2F1B7971A16B4C3406D427 /* WatchLeaderboardView.swift */; };
+		1DFBA31C83FE8948B09ACA68 /* PhoneConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78CC82CDDD686AACADED307 /* PhoneConnectivityManager.swift */; };
+		1EC05422CC71836A2A44F166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4D582EDF894D18CE54FC8C /* Assets.xcassets */; };
+		22F4193BF2DCF64A7A806310 /* Hole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5B165B2B7D6B94C37CF039 /* Hole.swift */; };
+		2B193BCA378C3DC48250B7E0 /* WatchGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42145919A75A06EB06D07DC6 /* WatchGameState.swift */; };
+		385B73A130E96E33DEE9861C /* ScoreEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E4739D7D63734489EB6D26 /* ScoreEntryView.swift */; };
+		386A6DB072BB0E4A463F6511 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290ED48788F9E21E1DE989CB /* SetupView.swift */; };
+		3DEBDA4A07A8ACEC2EC5C4CD /* WolfScorer Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8391DF04349393EC8B988255 /* WolfScorer Watch App.app */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		44D59536C2AB7EC027CBC3D5 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450FED2242C0F3FB365FBA2 /* GameViewModel.swift */; };
+		45F8440DFEDFE7C9F4899737 /* Hole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5B165B2B7D6B94C37CF039 /* Hole.swift */; };
+		47531C012A613E18BD7D33E6 /* WolfDecisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EFDACB8E18A14189B3664B /* WolfDecisionView.swift */; };
+		59F50351D8CB769A4B1040AE /* WolfScoringEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D3E5060FEC93A86367996 /* WolfScoringEngine.swift */; };
+		62B4D5C79B41D023F9936BDB /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D015B73E26BEB59555983 /* LeaderboardView.swift */; };
+		84B13CA0EC22F8192A0823B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C533B5B489D7D9B98D0D42F /* Assets.xcassets */; };
+		9B2F03AF442C43C97360001A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD8A6FEC428214F7E0B760 /* Player.swift */; };
+		9FF16802EC75EF34F74CD3D5 /* WatchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489CF41165981C567A75744A /* WatchContentView.swift */; };
+		B2555C9B513881AE8D0C547A /* WatchGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42145919A75A06EB06D07DC6 /* WatchGameState.swift */; };
+		BD81387809D0F1FE97831492 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D656E88ACF6B9DA2E6E1AA /* Game.swift */; };
+		C109FE6B834C3216A41D9D64 /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97D287A6582C72B6A99935 /* WatchApp.swift */; };
+		C2549DF3B841198985D99C7B /* WolfScoringEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D3E5060FEC93A86367996 /* WolfScoringEngine.swift */; };
+		D29F4CF499C373E3B994AF8B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D656E88ACF6B9DA2E6E1AA /* Game.swift */; };
+		DC761AA4B126D056F86F768F /* WolfScorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C39B1916A74D0694DC0B0DD /* WolfScorerApp.swift */; };
+		E3FE2232BB323744C02C1925 /* HoleResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9419D1434EF406096E0A88 /* HoleResultView.swift */; };
+		F89380E1085C4D3CEA8BF6DD /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D64AAEC80A7A12DC6C3CA4 /* WatchConnectivityManager.swift */; };
+		FDB29AFF4A04D46B736B27B3 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0A37CAA026C9A6B6647DE /* SummaryView.swift */; };
+		FE3F6A157DB288CA573CF70D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD8A6FEC428214F7E0B760 /* Player.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30EBA0F189E5F606DB35D754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A0C2EE13F4AC9D9DAD94D48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C10C71C5A639BEDDE256A0DD;
+			remoteInfo = "WolfScorer Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F48DFC666619E824A20CF5F9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3DEBDA4A07A8ACEC2EC5C4CD /* WolfScorer Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C39B1916A74D0694DC0B0DD /* WolfScorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfScorerApp.swift; sourceTree = "<group>"; };
+		0C6D3E5060FEC93A86367996 /* WolfScoringEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfScoringEngine.swift; sourceTree = "<group>"; };
+		13D656E88ACF6B9DA2E6E1AA /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		15A31CBD6E73683ACAB448D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1A5B165B2B7D6B94C37CF039 /* Hole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hole.swift; sourceTree = "<group>"; };
+		244D015B73E26BEB59555983 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		290ED48788F9E21E1DE989CB /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		3E2F1B7971A16B4C3406D427 /* WatchLeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchLeaderboardView.swift; sourceTree = "<group>"; };
+		42145919A75A06EB06D07DC6 /* WatchGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchGameState.swift; sourceTree = "<group>"; };
+		466011B6F56A8DAA3769D457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		489CF41165981C567A75744A /* WatchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchContentView.swift; sourceTree = "<group>"; };
+		59AD8A6FEC428214F7E0B760 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		63EFDACB8E18A14189B3664B /* WolfDecisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfDecisionView.swift; sourceTree = "<group>"; };
+		7B10144F9B1DBB803E860E53 /* WolfScorer.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = WolfScorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8391DF04349393EC8B988255 /* WolfScorer Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WolfScorer Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A4D582EDF894D18CE54FC8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D9419D1434EF406096E0A88 /* HoleResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoleResultView.swift; sourceTree = "<group>"; };
+		9C533B5B489D7D9B98D0D42F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B78CC82CDDD686AACADED307 /* PhoneConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneConnectivityManager.swift; sourceTree = "<group>"; };
+		CC97D287A6582C72B6A99935 /* WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchApp.swift; sourceTree = "<group>"; };
+		EDE0A37CAA026C9A6B6647DE /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		F0D64AAEC80A7A12DC6C3CA4 /* WatchConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager.swift; sourceTree = "<group>"; };
+		F1E4739D7D63734489EB6D26 /* ScoreEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreEntryView.swift; sourceTree = "<group>"; };
+		F450FED2242C0F3FB365FBA2 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		28163682AFDC397214456A36 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D9419D1434EF406096E0A88 /* HoleResultView.swift */,
+				244D015B73E26BEB59555983 /* LeaderboardView.swift */,
+				F1E4739D7D63734489EB6D26 /* ScoreEntryView.swift */,
+				290ED48788F9E21E1DE989CB /* SetupView.swift */,
+				EDE0A37CAA026C9A6B6647DE /* SummaryView.swift */,
+				63EFDACB8E18A14189B3664B /* WolfDecisionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9CEEA405D2988F2BD42571D0 = {
+			isa = PBXGroup;
+			children = (
+				F1CC27DB85CE2492B2FF68CE /* iOS */,
+				E7B4683CCD4AF4FDAC5C1166 /* Shared */,
+				B4A79B784460DEC1FB07EFC7 /* Watch */,
+				E20F7A6EF15C98B49EF1BAFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4A79B784460DEC1FB07EFC7 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				9C533B5B489D7D9B98D0D42F /* Assets.xcassets */,
+				15A31CBD6E73683ACAB448D1 /* Info.plist */,
+				CC97D287A6582C72B6A99935 /* WatchApp.swift */,
+				F0D64AAEC80A7A12DC6C3CA4 /* WatchConnectivityManager.swift */,
+				489CF41165981C567A75744A /* WatchContentView.swift */,
+				3E2F1B7971A16B4C3406D427 /* WatchLeaderboardView.swift */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		DB23027ED08DAAE83B5307C0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F450FED2242C0F3FB365FBA2 /* GameViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E20F7A6EF15C98B49EF1BAFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8391DF04349393EC8B988255 /* WolfScorer Watch App.app */,
+				7B10144F9B1DBB803E860E53 /* WolfScorer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7B4683CCD4AF4FDAC5C1166 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				13D656E88ACF6B9DA2E6E1AA /* Game.swift */,
+				1A5B165B2B7D6B94C37CF039 /* Hole.swift */,
+				59AD8A6FEC428214F7E0B760 /* Player.swift */,
+				42145919A75A06EB06D07DC6 /* WatchGameState.swift */,
+				0C6D3E5060FEC93A86367996 /* WolfScoringEngine.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F1CC27DB85CE2492B2FF68CE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8A4D582EDF894D18CE54FC8C /* Assets.xcassets */,
+				466011B6F56A8DAA3769D457 /* Info.plist */,
+				B78CC82CDDD686AACADED307 /* PhoneConnectivityManager.swift */,
+				0C39B1916A74D0694DC0B0DD /* WolfScorerApp.swift */,
+				DB23027ED08DAAE83B5307C0 /* ViewModels */,
+				28163682AFDC397214456A36 /* Views */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		016CF443031EC65477217114 /* WolfScorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ECCDD9FA10519CF0A856D88 /* Build configuration list for PBXNativeTarget "WolfScorer" */;
+			buildPhases = (
+				80EADC51714664F893318346 /* Sources */,
+				0E740E3C94B63140C0C35538 /* Resources */,
+				F48DFC666619E824A20CF5F9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E03233B182A1457B444AC2EE /* PBXTargetDependency */,
+			);
+			name = WolfScorer;
+			packageProductDependencies = (
+			);
+			productName = WolfScorer;
+			productReference = 7B10144F9B1DBB803E860E53 /* WolfScorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C10C71C5A639BEDDE256A0DD /* WolfScorer Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C3A6F059FBD554E0D57EEB2 /* Build configuration list for PBXNativeTarget "WolfScorer Watch App" */;
+			buildPhases = (
+				9B9699E0B3B7457DEB53E57F /* Sources */,
+				D207F95EF34D277917CAF61E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WolfScorer Watch App";
+			packageProductDependencies = (
+			);
+			productName = "WolfScorer Watch App";
+			productReference = 8391DF04349393EC8B988255 /* WolfScorer Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A0C2EE13F4AC9D9DAD94D48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					016CF443031EC65477217114 = {
+						DevelopmentTeam = 668TAM9PJP;
+						ProvisioningStyle = Automatic;
+					};
+					C10C71C5A639BEDDE256A0DD = {
+						DevelopmentTeam = 668TAM9PJP;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B02173215C58A4D22919EA47 /* Build configuration list for PBXProject "WolfScorer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9CEEA405D2988F2BD42571D0;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E20F7A6EF15C98B49EF1BAFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				016CF443031EC65477217114 /* WolfScorer */,
+				C10C71C5A639BEDDE256A0DD /* WolfScorer Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E740E3C94B63140C0C35538 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC05422CC71836A2A44F166 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D207F95EF34D277917CAF61E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B13CA0EC22F8192A0823B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80EADC51714664F893318346 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29F4CF499C373E3B994AF8B /* Game.swift in Sources */,
+				44D59536C2AB7EC027CBC3D5 /* GameViewModel.swift in Sources */,
+				45F8440DFEDFE7C9F4899737 /* Hole.swift in Sources */,
+				E3FE2232BB323744C02C1925 /* HoleResultView.swift in Sources */,
+				62B4D5C79B41D023F9936BDB /* LeaderboardView.swift in Sources */,
+				1DFBA31C83FE8948B09ACA68 /* PhoneConnectivityManager.swift in Sources */,
+				9B2F03AF442C43C97360001A /* Player.swift in Sources */,
+				385B73A130E96E33DEE9861C /* ScoreEntryView.swift in Sources */,
+				386A6DB072BB0E4A463F6511 /* SetupView.swift in Sources */,
+				FDB29AFF4A04D46B736B27B3 /* SummaryView.swift in Sources */,
+				2B193BCA378C3DC48250B7E0 /* WatchGameState.swift in Sources */,
+				47531C012A613E18BD7D33E6 /* WolfDecisionView.swift in Sources */,
+				DC761AA4B126D056F86F768F /* WolfScorerApp.swift in Sources */,
+				C2549DF3B841198985D99C7B /* WolfScoringEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9699E0B3B7457DEB53E57F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD81387809D0F1FE97831492 /* Game.swift in Sources */,
+				22F4193BF2DCF64A7A806310 /* Hole.swift in Sources */,
+				FE3F6A157DB288CA573CF70D /* Player.swift in Sources */,
+				C109FE6B834C3216A41D9D64 /* WatchApp.swift in Sources */,
+				F89380E1085C4D3CEA8BF6DD /* WatchConnectivityManager.swift in Sources */,
+				9FF16802EC75EF34F74CD3D5 /* WatchContentView.swift in Sources */,
+				B2555C9B513881AE8D0C547A /* WatchGameState.swift in Sources */,
+				00C0F15117F93C42620E58F1 /* WatchLeaderboardView.swift in Sources */,
+				59F50351D8CB769A4B1040AE /* WolfScoringEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E03233B182A1457B444AC2EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C10C71C5A639BEDDE256A0DD /* WolfScorer Watch App */;
+			targetProxy = 30EBA0F189E5F606DB35D754 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		20CD69D80F41EA7914C360DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		2397A5CF4BE0087079C0B0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 668TAM9PJP;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elevine.WolfScorer.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		5F243A31AB9AB70B0CACE644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		7285B947B948F986A0357089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 668TAM9PJP;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elevine.WolfScorer;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A269448DDE617C225CBE01FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 668TAM9PJP;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elevine.WolfScorer;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E6FA4A6423955E9D1FBE9CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 668TAM9PJP;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elevine.WolfScorer.watchkitapp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ECCDD9FA10519CF0A856D88 /* Build configuration list for PBXNativeTarget "WolfScorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7285B947B948F986A0357089 /* Debug */,
+				A269448DDE617C225CBE01FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8C3A6F059FBD554E0D57EEB2 /* Build configuration list for PBXNativeTarget "WolfScorer Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6FA4A6423955E9D1FBE9CF5 /* Debug */,
+				2397A5CF4BE0087079C0B0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B02173215C58A4D22919EA47 /* Build configuration list for PBXProject "WolfScorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F243A31AB9AB70B0CACE644 /* Debug */,
+				20CD69D80F41EA7914C360DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A0C2EE13F4AC9D9DAD94D48 /* Project object */;
+}
