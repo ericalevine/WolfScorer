@@ -48,6 +48,12 @@ class GameViewModel: ObservableObject {
         currentPlayerHasHit = true
     }
 
+    // Called when Watch impact detector fires
+    func playerHitDetected() {
+        guard phase == .wolfDecision, !currentPlayerHasHit else { return }
+        markCurrentPlayerHit()
+    }
+
     func selectPartner(_ player: Player) {
         currentHole.partnerPlayerID = player.id
         currentHole.isLoneWolf = false

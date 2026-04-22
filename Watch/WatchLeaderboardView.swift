@@ -2,9 +2,14 @@ import SwiftUI
 
 struct WatchLeaderboardView: View {
     let state: WatchGameState
+    let detectionsThisHole: Int
 
     var body: some View {
         List {
+            if state.isWolfDecision {
+                listeningSection
+            }
+
             Section {
                 HStack {
                     Image(systemName: "pawprint.fill")
@@ -37,5 +42,31 @@ struct WatchLeaderboardView: View {
             }
         }
         .navigationTitle("Wolf")
+    }
+
+    var listeningSection: some View {
+        Section {
+            VStack(alignment: .leading, spacing: 4) {
+                HStack(spacing: 6) {
+                    Circle()
+                        .fill(.green)
+                        .frame(width: 7, height: 7)
+                    Text("Listening")
+                        .font(.caption2.bold())
+                        .foregroundStyle(.green)
+                    Spacer()
+                    if detectionsThisHole > 0 {
+                        Text("\(detectionsThisHole)")
+                            .font(.caption2)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+                if let name = state.currentPlayerName {
+                    Text("\(name) is up")
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
+                }
+            }
+        }
     }
 }

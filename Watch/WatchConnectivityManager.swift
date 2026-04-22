@@ -13,6 +13,11 @@ class WatchConnectivityManager: NSObject, ObservableObject, WCSessionDelegate {
         }
     }
 
+    func sendPlayerHit() {
+        guard WCSession.default.isReachable else { return }
+        WCSession.default.sendMessage(["playerHit": true], replyHandler: nil)
+    }
+
     nonisolated func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {}
 
     nonisolated func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {

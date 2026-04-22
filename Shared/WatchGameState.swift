@@ -8,4 +8,6 @@ struct WatchGameState: Codable {
     let holeNumber: Int
     let wolfName: String
     let players: [PlayerSummary]
+    var isWolfDecision: Bool = false
+    var currentPlayerName: String?  // whose tee shot is next
 }

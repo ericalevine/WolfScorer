@@ -26,6 +26,7 @@
 		B2555C9B513881AE8D0C547A /* WatchGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42145919A75A06EB06D07DC6 /* WatchGameState.swift */; };
 		BD81387809D0F1FE97831492 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D656E88ACF6B9DA2E6E1AA /* Game.swift */; };
 		C109FE6B834C3216A41D9D64 /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC97D287A6582C72B6A99935 /* WatchApp.swift */; };
+		C130129F3DEB43DB93F23F08 /* ImpactDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345681E93DBE2137C052FDE9 /* ImpactDetector.swift */; };
 		C2549DF3B841198985D99C7B /* WolfScoringEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D3E5060FEC93A86367996 /* WolfScoringEngine.swift */; };
 		D29F4CF499C373E3B994AF8B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D656E88ACF6B9DA2E6E1AA /* Game.swift */; };
 		DC761AA4B126D056F86F768F /* WolfScorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C39B1916A74D0694DC0B0DD /* WolfScorerApp.swift */; };
@@ -67,6 +68,7 @@
 		1A5B165B2B7D6B94C37CF039 /* Hole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hole.swift; sourceTree = "<group>"; };
 		244D015B73E26BEB59555983 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		290ED48788F9E21E1DE989CB /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		345681E93DBE2137C052FDE9 /* ImpactDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactDetector.swift; sourceTree = "<group>"; };
 		3E2F1B7971A16B4C3406D427 /* WatchLeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchLeaderboardView.swift; sourceTree = "<group>"; };
 		42145919A75A06EB06D07DC6 /* WatchGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchGameState.swift; sourceTree = "<group>"; };
 		466011B6F56A8DAA3769D457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				9C533B5B489D7D9B98D0D42F /* Assets.xcassets */,
+				345681E93DBE2137C052FDE9 /* ImpactDetector.swift */,
 				15A31CBD6E73683ACAB448D1 /* Info.plist */,
 				CC97D287A6582C72B6A99935 /* WatchApp.swift */,
 				F0D64AAEC80A7A12DC6C3CA4 /* WatchConnectivityManager.swift */,
@@ -292,6 +295,7 @@
 			files = (
 				BD81387809D0F1FE97831492 /* Game.swift in Sources */,
 				22F4193BF2DCF64A7A806310 /* Hole.swift in Sources */,
+				C130129F3DEB43DB93F23F08 /* ImpactDetector.swift in Sources */,
 				FE3F6A157DB288CA573CF70D /* Player.swift in Sources */,
 				C109FE6B834C3216A41D9D64 /* WatchApp.swift in Sources */,
 				F89380E1085C4D3CEA8BF6DD /* WatchConnectivityManager.swift in Sources */,

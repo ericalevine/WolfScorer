@@ -23,11 +23,21 @@ class AppState: ObservableObject {
     @Published var viewModel: GameViewModel?
 
     func startGame(players: [Player], pointValue: Double) {
-        viewModel = GameViewModel(players: players, pointValue: pointValue)
+        let vm = GameViewModel(players: players, pointValue: pointValue)
+        viewModel = vm
+        PhoneConnectivityManager.shared.onPlayerHit = { [weak self, weak vm] in
+            guard let vm else { return }
+            vm.playerHitDetected()
+            if let self, self.viewModel != nil {
+                PhoneConnectivityManager.shared.sendGameState(vm)
+            }
+        }
+        PhoneConnectivityManager.shared.sendGameState(vm)
     }
 
     func resetGame() {
         viewModel = nil
+        PhoneConnectivityManager.shared.onPlayerHit = nil
     }
 }
 

@@ -47,6 +47,7 @@ targets:
       properties:
         WKCompanionAppBundleIdentifier: com.elevine.WolfScorer
         WKApplication: true
+        NSMicrophoneUsageDescription: Wolf Scorer listens for the sound of club impact to automatically advance the tee shot sequence.
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.elevine.WolfScorer.watchkitapp
